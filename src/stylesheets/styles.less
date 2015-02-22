@@ -1,0 +1,373 @@
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "my-variables.less";
+
+
+//
+// Base
+// --------------------------------------------------
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	color: #555 !important;
+	background-color: #e9e390 !important;
+	font-family: @font-family !important;
+	height: 100%;
+}
+
+footer {
+	margin-top: 60px;
+}
+
+.pad-bttm {
+	margin-bottom: 40px;
+}
+
+
+//
+// Typography
+// --------------------------------------------------
+
+h2 {
+	font-weight: 300 !important;
+}
+
+
+//
+// Buttons and Links
+// --------------------------------------------------
+
+.btn {
+	color: #fff;
+	background-color: #555;
+	border: none !important;
+	text-transform: uppercase;
+}
+
+.btn-default {
+	color: #fff !important;
+	&:hover {
+		background-color: @btn-darken !important;
+	}
+}
+
+.btn-lg {
+	padding: 15px 30px !important;
+	border-radius: @border-radius-small !important;
+}
+
+a {
+	.transition(all 0.2s;);
+}
+
+
+//
+// Forms
+// --------------------------------------------------
+
+.input-group {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.input-group-btn {
+	&:hover {
+		z-index: 0 !important;
+	}
+}
+
+input[type="text"] {
+	padding-left: 15px;
+	padding-right: 15px;
+	border: none;
+	box-shadow: none;
+	color: #34958f;
+	.placeholder(@color: #34958f);
+	font-size: 18px;
+	@media (min-width: @screen-sm-min) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}	
+}
+
+
+//
+// Content
+// --------------------------------------------------
+
+#top {
+	z-index: 1;
+	position: relative;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	#gradient > .vertical(#62b5af; #e9e390; 50%; 100%);
+	@media (min-width: @screen-sm-min) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}	
+}
+
+#logo {
+	margin-bottom: 60px;
+}
+
+#cloud1 {
+	z-index: 10;
+	position: absolute;
+	width: 243px;
+	height: 82px;
+	left: 60px;
+	top: 96px;
+	background: url(/images/bg-cloud1.png) 0 0 no-repeat;
+}
+
+#cloud2 {
+	z-index: 10;
+	position: absolute;
+	width: 216px;
+	height: 72px;
+	left: -10px;
+	top: 506px;
+	background: url(/images/bg-cloud2.png) 0 0 no-repeat;
+}
+
+#cloud3 {
+	z-index: 10;
+	position: absolute;
+	width: 146px;
+	height: 49px;
+	left: 210px;
+	bottom: 155px;
+	background: url(/images/bg-cloud3.png) 0 0 no-repeat;
+}
+
+#cloud4 {
+	z-index: 10;
+	position: absolute;
+	width: 365px;
+	height: 123px;
+	right: 60px;
+	top: 38px;
+	background: url(/images/bg-cloud4.png) 0 0 no-repeat;
+}
+
+#cloud5 {
+	z-index: 10;
+	position: absolute;
+	width: 146px;
+	height: 49px;
+	right: -20px;
+	bottom: 555px;
+	background: url(/images/bg-cloud5.png) 0 0 no-repeat;
+}
+
+#cloud6 {
+	z-index: 10;
+	position: absolute;
+	width: 216px;
+	height: 72px;
+	right: 80px;
+	bottom: 255px;
+	background: url(/images/bg-cloud6.png) 0 0 no-repeat;
+}
+
+#mt-left {
+	z-index: 10;
+	position: fixed;
+	width: 382px;
+	height: 287px;
+	left: 0;
+	bottom: 0;
+	background: url(/images/bg-mts-left.png) 0 100% no-repeat;
+}
+
+#mt-right {
+	z-index: 10;
+	position: fixed;
+	width: 382px;
+	height: 287px;
+	right: 0;
+	bottom: 0;
+	background: url(/images/bg-mts-right.png) 0 100% no-repeat;
+}
+
+#content {
+	position: relative;
+	z-index: 100;
+	tranform: none;
+  @media (min-width: @screen-sm-min) {
+		top: 50%;
+  	transform: translateY(-50%);
+	}
+	@media screen and (max-height: 980px) {
+		top: 0;
+		transform: translateY(0%);
+	}
+}
+
+
+//
+// Quote Response Modal
+// --------------------------------------------------
+
+#subscribe-modal {
+	.modal-header {
+		border-bottom: none;
+	}
+	h3 {
+		margin-top: 0;
+	}
+}
+
+
+//Quote
+
+#quote {
+	position: relative;
+	margin-bottom: 0;
+	padding: 20px 10px 60px 10px;
+	text-align: center;
+	border-left: 0 !important;
+	#gradient > .vertical(#62b5af; #afcf9e; 50%; 100%);
+	@media (min-width: @screen-sm-min) {
+		padding: 60px 10px;
+	}
+	p {
+		font-size: 22px;
+		color: #fff !important;
+		@media (min-width: @screen-sm-min) {
+			font-size: 36px;
+		}
+	}
+	footer {
+		margin-top: 20px;
+		color: #fff !important;
+		@media (min-width: @screen-sm-min) {
+			margin-top: 40px;	
+		}
+	}
+	.photo {
+		position: absolute;
+		bottom: -30px;
+		left: 50%;
+		width: 60px;
+		height: 60px;
+  	transform: translateX(-50%);
+	}
+}
+
+
+// Response
+
+#response {
+	margin-top: 40px;
+	padding-bottom: 20px;
+	.content {
+		position: relative;
+	}
+	.row {
+		margin-top: 0;
+	}
+	.testimonial {
+		position: absolute;
+		margin-top: 30px;
+		margin-bottom: 90px;
+		padding-bottom: 85px;
+	}
+	.customer-logo {
+		width: 150px;
+		height: 50px;
+	}
+	blockquote {
+		margin-top: 10px;
+		margin-bottom: 20px;
+		padding: 0 10px !important;
+		border: none;
+		font-weight: 300;
+		font-style: italic;
+		background-color: #fff !important;
+	}
+	.customer {
+		padding: 0;
+	}
+	.name {
+		padding-top: 5px;
+		margin-bottom: 0;
+		font-weight: bold;
+	}
+}
+
+
+// First Name Form
+
+#name-form {
+	padding: 10px;
+	background-color: #ddf0ef;
+	p {
+		margin-top: 9px;
+	}
+}
+
+#subscribe {
+	margin-top: 30px;
+}
+
+
+//
+// Footer
+// --------------------------------------------------
+
+footer {
+	color: #2a7873;
+	a {
+		color: #2a7873;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none !important;
+		}
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+		li {
+			display: inline;
+			margin: 0 5px;
+			width: 40px;
+			height: 40px;
+			text-indent: -9999px;
+			a {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+			}
+			#facebook {
+				width: 40px;
+				height: 40px;
+				background-image: url(/images/icon-facebook.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				background-size: 40px 40px;
+				&:hover {
+					.opacity(@opacity: 0.85);
+				}
+			}
+			#twitter {
+				width: 40px;
+				height: 40px;
+				background-image: url(/images/icon-twitter.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				background-size: 40px 40px;
+				&:hover {
+					.opacity(@opacity: 0.85);
+				}
+			}
+		}
+	}
+}
