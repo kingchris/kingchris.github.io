@@ -13067,15 +13067,29 @@ html {
 body {
   position: relative;
   color: #555 !important;
-  background-color: #e9e390 !important;
+  background-color: #fff;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   height: 100%;
 }
-footer {
-  margin-top: 60px;
-}
 .pad-bttm {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+.navbar {
+  padding: 20px 0;
+  background-color: #ffffff !important;
+}
+.navbar .icon-bar {
+  background-color: #000;
+}
+.navbar .navbar-brand {
+  color: #333;
+  text-transform: uppercase;
+}
+.navbar .navbar-nav a {
+  color: #f44336;
+}
+h1 {
+  margin-top: 0;
 }
 h2 {
   font-weight: 300 !important;
@@ -13133,216 +13147,32 @@ input[type="text"]::-webkit-input-placeholder {
     padding-right: 30px;
   }
 }
-#top {
-  z-index: 1;
-  position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  background-image: -webkit-linear-gradient(top, #62b5af 50%, #e9e390 100%);
-  background-image: -o-linear-gradient(top, #62b5af 50%, #e9e390 100%);
-  background-image: linear-gradient(to bottom, #62b5af 50%, #e9e390 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62b5af', endColorstr='#ffe9e390', GradientType=0);
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-@media (min-width: 768px) {
-  #top {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+#intro {
+  padding-top: 170px;
+  background-color: #f44336;
+  color: #ffffff !important;
 }
-#logo {
-  margin-bottom: 60px;
-}
-#cloud1 {
-  z-index: 10;
-  position: absolute;
-  width: 243px;
-  height: 82px;
-  left: 60px;
-  top: 96px;
-  background: url(/images/bg-cloud1.png) 0 0 no-repeat;
-}
-#cloud2 {
-  z-index: 10;
-  position: absolute;
-  width: 216px;
-  height: 72px;
-  left: -10px;
-  top: 506px;
-  background: url(/images/bg-cloud2.png) 0 0 no-repeat;
-}
-#cloud3 {
-  z-index: 10;
-  position: absolute;
-  width: 146px;
-  height: 49px;
-  left: 210px;
-  bottom: 155px;
-  background: url(/images/bg-cloud3.png) 0 0 no-repeat;
-}
-#cloud4 {
-  z-index: 10;
-  position: absolute;
-  width: 365px;
-  height: 123px;
-  right: 60px;
-  top: 38px;
-  background: url(/images/bg-cloud4.png) 0 0 no-repeat;
-}
-#cloud5 {
-  z-index: 10;
-  position: absolute;
-  width: 146px;
-  height: 49px;
-  right: -20px;
-  bottom: 555px;
-  background: url(/images/bg-cloud5.png) 0 0 no-repeat;
-}
-#cloud6 {
-  z-index: 10;
-  position: absolute;
-  width: 216px;
-  height: 72px;
-  right: 80px;
-  bottom: 255px;
-  background: url(/images/bg-cloud6.png) 0 0 no-repeat;
-}
-#mt-left {
-  z-index: 10;
-  position: fixed;
-  width: 382px;
-  height: 287px;
-  left: 0;
-  bottom: 0;
-  background: url(/images/bg-mts-left.png) 0 100% no-repeat;
-}
-#mt-right {
-  z-index: 10;
-  position: fixed;
-  width: 382px;
-  height: 287px;
-  right: 0;
-  bottom: 0;
-  background: url(/images/bg-mts-right.png) 0 100% no-repeat;
-}
-#content {
-  position: relative;
-  z-index: 100;
-  tranform: none;
-}
-@media (min-width: 768px) {
-  #content {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-@media screen and (max-height: 980px) {
-  #content {
-    top: 0;
-    transform: translateY(0%);
-  }
-}
-#subscribe-modal .modal-header {
-  border-bottom: none;
-}
-#subscribe-modal h3 {
-  margin-top: 0;
-}
-#quote {
-  position: relative;
+#intro .lead {
   margin-bottom: 0;
-  padding: 20px 10px 60px 10px;
-  text-align: center;
-  border-left: 0 !important;
-  background-image: -webkit-linear-gradient(top, #62b5af 50%, #afcf9e 100%);
-  background-image: -o-linear-gradient(top, #62b5af 50%, #afcf9e 100%);
-  background-image: linear-gradient(to bottom, #62b5af 50%, #afcf9e 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62b5af', endColorstr='#ffafcf9e', GradientType=0);
 }
-@media (min-width: 768px) {
-  #quote {
-    padding: 60px 10px;
-  }
+#work {
+  background-color: #f1f1f1;
 }
-#quote p {
-  font-size: 22px;
-  color: #fff !important;
-}
-@media (min-width: 768px) {
-  #quote p {
-    font-size: 36px;
-  }
-}
-#quote footer {
-  margin-top: 20px;
-  color: #fff !important;
-}
-@media (min-width: 768px) {
-  #quote footer {
-    margin-top: 40px;
-  }
-}
-#quote .photo {
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  transform: translateX(-50%);
-}
-#response {
-  margin-top: 40px;
-  padding-bottom: 20px;
-}
-#response .content {
-  position: relative;
-}
-#response .row {
-  margin-top: 0;
-}
-#response .testimonial {
-  position: absolute;
-  margin-top: 30px;
-  margin-bottom: 90px;
-  padding-bottom: 85px;
-}
-#response .customer-logo {
-  width: 150px;
-  height: 50px;
-}
-#response blockquote {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 0 10px !important;
-  border: none;
-  font-weight: 300;
-  font-style: italic;
-  background-color: #fff !important;
-}
-#response .customer {
-  padding: 0;
-}
-#response .name {
-  padding-top: 5px;
-  margin-bottom: 0;
-  font-weight: bold;
-}
-#name-form {
-  padding: 10px;
-  background-color: #ddf0ef;
-}
-#name-form p {
-  margin-top: 9px;
-}
-#subscribe {
-  margin-top: 30px;
+#work img {
+  width: 570px;
+  height: 400px;
+  background-color: #ccc;
 }
 footer {
+  padding: 40px 0;
   color: #2a7873;
+}
+footer p {
+  margin-bottom: 0;
 }
 footer a {
   color: #2a7873;
