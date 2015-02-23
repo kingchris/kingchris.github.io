@@ -1,0 +1,210 @@
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "my-variables.less";
+
+
+//
+// Base
+// --------------------------------------------------
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	color: #555 !important;
+	background-color: #fff;
+	font-family: @font-family !important;
+	height: 100%;
+}
+
+.pad-bttm {
+	margin-bottom: 30px;
+}
+
+
+//
+// Header
+// --------------------------------------------------
+
+.navbar {
+	padding: 20px 0;
+	background-color: rgb(255, 255, 255) !important;
+	.icon-bar {
+		background-color: #000;
+	}
+	.navbar-brand {
+		color: #333;
+		text-transform: uppercase;
+	}
+	.navbar-nav {
+		a {
+			color: @accent-red;
+		}
+	}
+}
+
+
+//
+// Typography
+// --------------------------------------------------
+
+h1 {
+	margin-top: 0;
+}
+
+h2 {
+	font-weight: 300 !important;
+}
+
+
+//
+// Buttons and Links
+// --------------------------------------------------
+
+.btn {
+	color: #fff;
+	background-color: #555;
+	border: none !important;
+	text-transform: uppercase;
+}
+
+.btn-default {
+	color: #fff !important;
+	&:hover {
+		background-color: @btn-darken !important;
+	}
+}
+
+.btn-lg {
+	padding: 15px 30px !important;
+	border-radius: @border-radius-small !important;
+}
+
+a {
+	.transition(all 0.2s;);
+}
+
+
+//
+// Forms
+// --------------------------------------------------
+
+.input-group {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.input-group-btn {
+	&:hover {
+		z-index: 0 !important;
+	}
+}
+
+input[type="text"] {
+	padding-left: 15px;
+	padding-right: 15px;
+	border: none;
+	box-shadow: none;
+	color: #34958f;
+	.placeholder(@color: #34958f);
+	font-size: 18px;
+	@media (min-width: @screen-sm-min) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}	
+}
+
+
+//
+// Sections
+// --------------------------------------------------
+
+section {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+// Intro
+// -------------------------
+
+#intro {
+	padding-top: 170px;
+	background-color: @accent-red;
+	color: rgb(255, 255, 255) !important;
+	.lead {
+		margin-bottom: 0;
+	}
+}
+
+
+// Work
+// -------------------------
+
+#work {
+	background-color: #f1f1f1;
+	img {
+		width: 570px; // for dev only
+		height: 400px; // for dev only
+		background-color: #ccc;
+	}
+}
+
+
+//
+// Footer
+// --------------------------------------------------
+
+footer {
+	padding: 40px 0;
+	color: #2a7873;
+	p {
+		margin-bottom: 0;
+	}
+	a {
+		color: #2a7873;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none !important;
+		}
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+		li {
+			display: inline;
+			margin: 0 5px;
+			width: 40px;
+			height: 40px;
+			text-indent: -9999px;
+			a {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+			}
+			#facebook {
+				width: 40px;
+				height: 40px;
+				background-image: url(/images/icon-facebook.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				background-size: 40px 40px;
+				&:hover {
+					.opacity(@opacity: 0.85);
+				}
+			}
+			#twitter {
+				width: 40px;
+				height: 40px;
+				background-image: url(/images/icon-twitter.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				background-size: 40px 40px;
+				&:hover {
+					.opacity(@opacity: 0.85);
+				}
+			}
+		}
+	}
+}
