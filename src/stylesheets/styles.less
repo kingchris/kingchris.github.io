@@ -14,7 +14,7 @@ body {
 	position: relative;
 	color: #555 !important;
 	background-color: #fff;
-	font-family: @font-family !important;
+	font-family: @font-family-body !important;
 	height: 100%;
 }
 
@@ -48,6 +48,13 @@ body {
 //
 // Typography
 // --------------------------------------------------
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: @font-family-headings;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 7px;
+}
 
 h1 {
 	margin-top: 0;
