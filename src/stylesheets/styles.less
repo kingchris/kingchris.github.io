@@ -30,6 +30,7 @@ body {
 .navbar {
 	padding: 20px 0;
 	background-color: rgb(255, 255, 255) !important;
+	.box-shadow(@box-shadow);
 	.icon-bar {
 		background-color: #000;
 	}
@@ -51,9 +52,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: @font-family-headings;
-	text-transform: uppercase;
 	font-weight: normal;
-	letter-spacing: 7px;
 }
 
 h1 {
@@ -61,7 +60,26 @@ h1 {
 }
 
 h2 {
+	margin-bottom: 60px;
+	text-align: center;
+	font-size: 18px;
 	font-weight: 300 !important;
+	&:before {
+		content: ' ';
+		display: block;
+		width: 20px;
+		margin: 0 auto 20px;
+		height: 2px;
+		background-color: #ddd;
+	}
+	&:after {
+		content: ' ';
+		display: block;
+		width: 20px;
+		margin: 20px auto 0;
+		height: 2px;
+		background-color: #ddd;
+	}
 }
 
 
@@ -132,28 +150,42 @@ section {
 	padding-bottom: 80px;
 }
 
+.lt-gray {
+	background-color: @lt-gray;
+}
 
-// Intro
+.dk-gray {
+	background-color: @dk-gray;
+}
+
+
+// Intros
 // -------------------------
 
 #intro {
-	padding-top: 170px;
-	background-color: @accent-red;
-	color: rgb(255, 255, 255) !important;
+	padding-top: 250px;
+	padding-bottom: 150px;
 	.lead {
 		margin-bottom: 0;
 	}
 }
 
+#home {
+	#intro {
+		background-color: @accent-red;
+		color: rgb(255, 255, 255) !important;
+	}
+}
 
-// Work
+
+// Work Grid
 // -------------------------
 
-#work {
+#work-grid {
 	background-color: #f1f1f1;
 	img {
-		width: 570px; // for dev only
-		height: 400px; // for dev only
+		width: 360px; // for dev only
+		height: 360px; // for dev only
 		background-color: #ccc;
 	}
 	.work-container {
@@ -188,6 +220,40 @@ section {
 			z-index: 1;
 		}
 	}
+}
+
+
+//
+// Work
+// --------------------------------------------------
+
+
+// Weckey
+// -------------------------
+
+#weckey {
+	#intro {
+		background-color: #ed5623;
+		color: #fff;
+	}
+	#bizcard {
+		background-color: @lt-gray;
+	}
+	#website {
+		background-color: #0d1114;
+	}
+	#responsive {
+		background-color: #5a788c;
+	}
+}
+
+
+//
+// Images
+// --------------------------------------------------
+
+.shadow {
+	.box-shadow(@box-shadow);
 }
 
 
