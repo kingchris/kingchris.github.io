@@ -13108,14 +13108,6 @@ h2 {
   font-size: 18px;
   font-weight: 300 !important;
 }
-h2:before {
-  content: ' ';
-  display: block;
-  width: 20px;
-  margin: 0 auto 20px;
-  height: 2px;
-  background-color: #ddd;
-}
 h2:after {
   content: ' ';
   display: block;
