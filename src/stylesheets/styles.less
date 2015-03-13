@@ -30,7 +30,7 @@ body {
 .navbar {
 	padding: 20px 0;
 	background-color: rgb(255, 255, 255) !important;
-	.box-shadow(@box-shadow);
+	box-shadow: @box-shadow-lt;
 	.icon-bar {
 		background-color: #000;
 	}
@@ -169,6 +169,10 @@ section {
 	}
 }
 
+.roles {
+	font-weight: 300;
+}
+
 
 // Work Grid
 // -------------------------
@@ -225,14 +229,14 @@ section {
 
 #weckey {
 	#intro {
-		background-color: #ed5623;
+		background-color: @weckey-orange;
 		color: #fff;
 	}
 	#bizcard {
-		background-color: @lt-gray;
+		
 	}
 	#website {
-		background-color: #0d1114;
+		background-color: @weckey-dk-twilight;
 	}
 	#responsive {
 		background-color: #5a788c;
@@ -244,8 +248,12 @@ section {
 // Images
 // --------------------------------------------------
 
-.shadow {
-	.box-shadow(@box-shadow);
+.shadow-lt {
+	box-shadow: @box-shadow-lt;
+}
+
+.shadow-md {
+	box-shadow: @box-shadow-md;
 }
 
 

@@ -13077,7 +13077,6 @@ body {
 .navbar {
   padding: 20px 0;
   background-color: #ffffff !important;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .navbar .icon-bar {
@@ -13190,6 +13189,9 @@ section {
   background-color: #f44336;
   color: #ffffff !important;
 }
+.roles {
+  font-weight: 300;
+}
 #work-grid {
   background-color: #f1f1f1;
 }
@@ -13236,18 +13238,17 @@ section {
   background-color: #ed5623;
   color: #fff;
 }
-#weckey #bizcard {
-  background-color: #f1f1f1;
-}
 #weckey #website {
   background-color: #0d1114;
 }
 #weckey #responsive {
   background-color: #5a788c;
 }
-.shadow {
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.shadow-lt {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.shadow-md {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 footer {
   padding: 40px 0;
