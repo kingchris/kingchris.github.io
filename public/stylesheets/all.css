@@ -13235,14 +13235,13 @@ section {
   z-index: 1;
 }
 #weckey #intro {
+  position: fixed;
+  width: 100%;
   background-color: #ed5623;
   color: #fff;
 }
 #weckey #website {
   background-color: #0d1114;
-}
-#weckey #responsive {
-  background-color: #5a788c;
 }
 .shadow-lt {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
