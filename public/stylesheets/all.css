@@ -13172,15 +13172,32 @@ input[type="text"]::-webkit-input-placeholder {
     padding-right: 30px;
   }
 }
-#intro {
+.hero {
   top: 91px;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
+  padding: 0;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   transform-style: preserve-3d;
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+}
+.hero-img {
+  position: absolute !important;
+  height: 400px !important;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(/images/weckey-web-hero.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 section {
   padding-top: 80px;
@@ -13198,14 +13215,7 @@ section {
 .split-img {
   padding: 0 !important;
 }
-#intro {
-  padding-top: 250px;
-  padding-bottom: 150px;
-}
-#intro .lead {
-  margin-bottom: 0;
-}
-#home #intro {
+#home .hero {
   background-color: #f44336;
   color: #ffffff !important;
 }
@@ -13254,7 +13264,7 @@ section {
 #work-grid .work-container .work {
   z-index: 1;
 }
-#weckey #intro {
+#weckey .hero {
   background-image: url(http://paper-leaf.com/wp-content/uploads/2014/08/ak-Hero_background1.jpg);
 }
 #weckey .accent {
