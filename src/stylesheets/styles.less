@@ -148,25 +148,23 @@ input[type="text"] {
 // --------------------------------------------------
 
 .hero {
-	position: fixed;
-	z-index: 0;
-	top: 91px;
 	width: 100%;
-	height: 100vh;
-	padding: 0;
+	height: 85vh;
+	padding: 300px 0 0 0;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
 	background-attachment: fixed;
 	transform-style: preserve-3d;
 	@media (min-width: @screen-sm-min) {
-		height: 90vh;
+		height: 85vh;
 	}
 }
 
 .hero-img {
+	z-index: 100;
 	position: absolute;
-	bottom: 0;
+	bottom: -80px;
 	left: 50%;
 	transform: translateX(-50%);
 	// background-image: url(/images/weckey-web-hero.png);
@@ -176,9 +174,7 @@ input[type="text"] {
 }
 
 #content {
-	z-index: 100;
-	position: relative;
-	top: 90vh;
+	z-index: 1;
 }
 
 section {
