@@ -13087,11 +13087,11 @@ body {
   background-color: #000;
 }
 .navbar .navbar-brand {
-  color: #fff;
+  color: #f44336;
   text-transform: uppercase;
 }
 .navbar .navbar-nav a {
-  color: #fff;
+  color: #f44336;
 }
 h1,
 h2,
@@ -13187,6 +13187,9 @@ input[type="text"]::-webkit-input-placeholder {
     height: 85vh;
   }
 }
+.hero #hero-content {
+  z-index: 2;
+}
 .hero-img {
   z-index: 100;
   position: absolute;
@@ -13200,6 +13203,14 @@ input[type="text"]::-webkit-input-placeholder {
 section {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+section .overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .white {
   background-color: #ffffff;
@@ -13263,7 +13274,16 @@ section {
   z-index: 1;
 }
 #weckey .hero {
-  background-image: url(/images/bg-test.jpg);
+  background-image: url(/images/weckey-web-hero.jpg);
+}
+#weckey .overlay {
+  background-image: linear-gradient(#0d1114, #27343d);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#1471da, endColorstr=#1C85FB)";
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+#weckey #intro {
+  background-color: #ed5623;
 }
 #weckey .accent {
   background-color: #0d1114;
