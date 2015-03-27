@@ -13141,6 +13141,33 @@ a {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
+.btn:active {
+  box-shadow: none;
+  border: none;
+}
+.btn:focus {
+  outline: none !important;
+}
+#btn-scroll {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  padding: 14px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+#btn-scroll i {
+  font-size: 32px;
+  color: #333 !important;
+}
 .input-group {
   margin-top: 20px;
   margin-bottom: 20px;
