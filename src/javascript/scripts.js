@@ -5,9 +5,12 @@ $(document).ready(function(){
     //     $(this).find('.overlay').stop().fadeOut(300);
     // })	
 
-	$('#btn-scroll').click(function(e) {
+	
+	// Hero Scroll Button
+	
+	$('.btn-scroll').click(function(e) {
 		e.preventDefault();
-		$('body,html').animate({scrollTop: $('.hero').outerHeight() - $('header').outerHeight()}, 800);
+		$('body,html').animate({scrollTop: $('#hero').outerHeight() - $('header').outerHeight()}, 800);
 	})
 	
 });

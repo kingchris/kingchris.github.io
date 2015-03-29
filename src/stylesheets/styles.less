@@ -66,7 +66,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	margin-top: 0;
+	margin: 0 0 60px 0;
 }
 
 h2 {
@@ -93,7 +93,13 @@ h2 {
 	color: #fff;
 	background-color: #555;
 	border: none !important;
-	text-transform: uppercase;
+	&:active {
+		box-shadow: none;
+		border: none;
+	}
+	&:focus {
+		outline: none !important;
+	}
 }
 
 .btn-default {
@@ -105,24 +111,20 @@ h2 {
 
 .btn-lg {
 	padding: 15px 30px !important;
-	border-radius: @border-radius-small !important;
 }
 
-a {
-	.transition(all 0.2s;);
+.btn-round {
+	.border-top-radius(30px);
+	.border-bottom-radius(30px);
 }
 
-.btn {
-	&:active {
-		box-shadow: none;
-		border: none;
-	}
-	&:focus {
-		outline: none !important;
-	}
+.btn-outline {
+	border: 1px solid #555 !important;
+	background-color: @white;
+	color: #555;
 }
 
-#btn-scroll {
+.btn-scroll {
 	position: absolute;
 	top: -30px;
 	left: 50%;
@@ -139,6 +141,16 @@ a {
 		font-size: 32px;
 		color: #333 !important;
 	}
+	&#weckey-scroll {
+		background-color: @weckey-orange;
+		i {
+			color: rgb(255, 255, 255) !important;
+		}	
+	}
+}
+
+a {
+	.transition(all 0.2s;);
 }
 
 
@@ -176,41 +188,8 @@ input[type="text"] {
 // Sections
 // --------------------------------------------------
 
-.hero {
-	width: 100%;
-	height: 85vh;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-size: cover;
-	background-attachment: fixed;
-  transform-style: preserve-3d;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	@media (min-width: @screen-sm-min) {
-		height: 90vh;
-	}
-
-}
-
-.hero-img {
-	z-index: 2;
-	position: relative;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -70%);
-	@media (min-width: @screen-sm-min) {
-		position: fixed;
-	}
-}
-
-#content {
-	position: relative;
-	z-index: 3;
-}
-
 section {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding: 80px 0;
 	.overlay {
 		z-index: 1;
 		position: absolute;
@@ -231,10 +210,6 @@ section {
 
 .dk-gray {
 	background-color: @dk-gray;
-}
-
-.split-img {
-	padding: 0 !important;
 }
 
 
@@ -300,7 +275,59 @@ section {
 
 
 //
-// Work
+// Project Page Layout
+// --------------------------------------------------
+
+
+// Hero
+// -------------------------
+
+#hero {
+	width: 100%;
+	height: 85vh;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	background-attachment: fixed;
+  transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	@media (min-width: @screen-sm-min) {
+		height: 80vh;
+	}
+}
+
+#hero-img {
+	z-index: 2;
+	position: relative;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	@media (min-width: @screen-sm-min) {
+		position: fixed;
+	}
+}
+
+
+// Main Content
+// -------------------------
+
+#intro {
+	padding: 60px 0;
+}
+
+#content {
+	position: relative;
+	z-index: 3;
+}
+
+.split-img {
+	padding: 0 !important;
+}
+
+
+//
+// Projects
 // --------------------------------------------------
 
 
@@ -308,16 +335,12 @@ section {
 // -------------------------
 
 #weckey {
-	.hero {
+	#hero {
 		background-image: url(/images/weckey-web-hero.jpg);
 	}
 	.overlay {
 		background-image: linear-gradient(rgba(39, 52, 61, 0.7), rgba(39, 52, 61, 1.0));
 		-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#1471da, endColorstr=#1C85FB)";
-		// background-color: @weckey-dk-twilight;
-	}
-	#intro {
-		background-color: #fff;
 	}
 	.accent {
 		background-color: @weckey-dk-twilight;
@@ -339,12 +362,25 @@ section {
 
 
 //
+// Pagination
+// --------------------------------------------------
+
+#pagination {
+	background-color: @white;
+	.btn {
+		margin: 0 10px;
+	}
+}
+
+
+//
 // Footer
 // --------------------------------------------------
 
 footer {
 	padding: 40px 0;
 	color: #2a7873;
+	background-color: @white;
 	p {
 		margin-bottom: 0;
 	}
