@@ -13164,6 +13164,7 @@ h2:after {
   width: 60px;
   height: 60px;
   text-align: center;
+  background-color: #ffffff;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -13173,11 +13174,8 @@ h2:after {
   font-size: 32px;
   color: #333 !important;
 }
-.btn-scroll#weckey-scroll {
-  background-color: #ed5623;
-}
 .btn-scroll#weckey-scroll i {
-  color: #ffffff !important;
+  color: #ed5623 !important;
 }
 @media (min-width: 768px) {
   .btn-scroll {
