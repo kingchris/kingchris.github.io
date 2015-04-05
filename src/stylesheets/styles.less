@@ -71,9 +71,9 @@ h1 {
 }
 
 h2 {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	text-align: center;
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: 300 !important;
 	&:after {
 		content: ' ';
@@ -204,6 +204,10 @@ section {
 	}
 }
 
+.fluid {
+	padding-bottom: 0;
+}
+
 .white {
 	background-color: @white;
 }
@@ -320,7 +324,7 @@ section {
 // Main Content
 // -------------------------
 
-#intro {
+#overview {
 	padding: 60px 0;
 }
 
@@ -356,8 +360,18 @@ section {
 		background: linear-gradient(to bottom, rgba(50,67,78,0.7) 0%, rgba(50,67,78,1) 70%, rgba(50,67,78,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32434e', endColorstr='#32434e', GradientType=0 );
 	}
+	#overview {
+		background-color: @weckey-orange;
+		color: @white;
+	}
 	.accent {
 		background-color: @weckey-dk-twilight;
+	}
+	#bizcards {
+		height: 60vh;
+		background-image: url(/images/weckey-bizcard.png);
+		background-position: 50% 50%;
+		background-size: cover;
 	}
 }
 

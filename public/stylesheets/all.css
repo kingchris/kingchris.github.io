@@ -13107,9 +13107,9 @@ h1 {
   color: #ffffff;
 }
 h2 {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 300 !important;
 }
 h2:after {
@@ -13231,6 +13231,9 @@ section .overlay {
   width: 100%;
   height: 100%;
 }
+.fluid {
+  padding-bottom: 0;
+}
 .white {
   background-color: #ffffff;
 }
@@ -13321,7 +13324,7 @@ section .overlay {
 #hero-content .lead {
   color: #ffffff;
 }
-#intro {
+#overview {
   padding: 60px 0;
 }
 #content {
@@ -13344,8 +13347,18 @@ section .overlay {
   background: linear-gradient(to bottom, rgba(50, 67, 78, 0.7) 0%, #32434e 70%, #32434e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32434e', endColorstr='#32434e', GradientType=0);
 }
+#weckey #overview {
+  background-color: #ed5623;
+  color: #ffffff;
+}
 #weckey .accent {
   background-color: #0d1114;
+}
+#weckey #bizcards {
+  height: 60vh;
+  background-image: url(/images/weckey-bizcard.png);
+  background-position: 50% 50%;
+  background-size: cover;
 }
 .shadow-lt {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
