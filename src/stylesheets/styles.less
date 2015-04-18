@@ -130,13 +130,14 @@ h2 {
 	z-index: 3;
 	bottom: 30px;
 	left: 50%;
-	transform: translateX(-50%);
 	display: block;
 	padding: 15px 14px;
 	width: 60px;
 	height: 60px;
 	text-align: center;
 	background-color: @white;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 	.border-top-radius(50%);
 	.border-bottom-radius(50%);
 	i {
@@ -312,6 +313,7 @@ section {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 	@media (min-width: @screen-sm-min) {
 		position: fixed;
 	}
