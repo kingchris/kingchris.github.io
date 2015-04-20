@@ -13175,9 +13175,6 @@ h2:after {
   font-size: 32px;
   color: #333 !important;
 }
-.btn-scroll#weckey-scroll i {
-  color: #ed5623 !important;
-}
 @media (min-width: 768px) {
   .btn-scroll {
     position: fixed;
@@ -13347,20 +13344,15 @@ section .overlay {
   background: linear-gradient(to bottom, rgba(50, 67, 78, 0.7) 0%, #32434e 70%, #32434e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32434e', endColorstr='#32434e', GradientType=0);
 }
-#weckey-web #overview {
-  background-color: #ed5623;
-  color: #ffffff;
+#weckey-web .btn-scroll i {
+  color: #ed5623 !important;
 }
-#weckey-web .accent {
+#weckey-web .twilight {
   background-color: #212b33;
-}
-#weckey-web .accent h2 {
   color: #ffffff;
 }
 #weckey-web .orange {
   background-color: #ed5623;
-}
-#weckey-web .orange h2 {
   color: #ffffff;
 }
 #weckey-web #bizcards {
@@ -13415,21 +13407,29 @@ section .overlay {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3ed5623', endColorstr='#ed5623', GradientType=0);
   /* IE6-9 */
 }
-#weckey-app #overview {
-  background-color: #ed5623;
-  color: #ffffff;
+#weckey-app .btn-scroll i {
+  color: #212b33 !important;
 }
-#weckey-app .accent {
+#weckey-app .twilight {
   background-color: #212b33;
-}
-#weckey-app .accent h2 {
   color: #ffffff;
 }
 #weckey-app .orange {
   background-color: #ed5623;
-}
-#weckey-app .orange h2 {
   color: #ffffff;
+}
+#weckey-app #ipad {
+  height: 67vh;
+  background-image: url(/images/weckey-app/weckey-app-ipad-mockup.jpg);
+  background-position: 42% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #weckey-app #ipad {
+    height: 65vh;
+    background-position: 50% 0;
+  }
 }
 .shadow-lt {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
