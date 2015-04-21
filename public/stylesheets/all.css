@@ -13153,33 +13153,6 @@ h2:after {
   background-color: #ffffff;
   color: #555;
 }
-.btn-scroll {
-  position: absolute;
-  z-index: 3;
-  bottom: 30px;
-  left: 50%;
-  display: block;
-  padding: 15px 14px;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  background-color: #ffffff;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-.btn-scroll i {
-  font-size: 32px;
-  color: #333 !important;
-}
-@media (min-width: 768px) {
-  .btn-scroll {
-    position: fixed;
-  }
-}
 a {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -13318,8 +13291,57 @@ section .overlay {
     position: fixed;
   }
 }
+@media screen and (max-height: 768px) {
+  #hero-content h1 {
+    font-size: 24px;
+  }
+}
 #hero-content .lead {
   color: #ffffff;
+}
+@media screen and (max-height: 768px) {
+  #hero-content .lead {
+    font-size: 14px;
+  }
+}
+.btn-scroll {
+  position: absolute;
+  z-index: 3;
+  bottom: 30px;
+  left: 50%;
+  display: block;
+  padding: 15px 14px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.btn-scroll i {
+  font-size: 32px;
+  color: #333 !important;
+}
+@media (min-width: 768px) {
+  .btn-scroll {
+    position: fixed;
+  }
+}
+@media screen and (max-height: 768px) {
+  .btn-scroll {
+    bottom: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  .btn-scroll i {
+    color: #ed5623;
+  }
 }
 #overview {
   padding: 60px 0;
@@ -13376,6 +13398,7 @@ section .overlay {
   }
 }
 #weckey-web #ipad {
+  min-height: 680px;
   height: 67vh;
   background-image: url(/images/weckey-web/weckey-web-ipad.jpg);
   background-position: 42% 0;
@@ -13419,6 +13442,7 @@ section .overlay {
   color: #ffffff;
 }
 #weckey-app #ipad {
+  min-height: 680px;
   height: 67vh;
   background-image: url(/images/weckey-app/weckey-app-ipad-mockup.jpg);
   background-position: 42% 0;
