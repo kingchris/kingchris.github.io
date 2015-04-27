@@ -13390,6 +13390,11 @@ section .overlay {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 992px) {
+  #weckey-web #bizcards {
+    background-attachment: fixed;
+  }
+}
 #weckey-web #macbook {
   height: 70vh;
   background-image: url(/images/weckey-web/weckey-web-macbook.jpg);
@@ -13401,6 +13406,11 @@ section .overlay {
   #weckey-web #macbook {
     height: 80vh;
     background-position: 20% 65%;
+  }
+}
+@media (min-width: 992px) {
+  #weckey-web #macbook {
+    background-attachment: fixed;
   }
 }
 #weckey-web #ipad {
