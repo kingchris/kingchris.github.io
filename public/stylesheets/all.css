@@ -13360,7 +13360,7 @@ section .overlay {
   padding: 0 !important;
 }
 #weckey-web #hero {
-  background-image: url(/images/weckey-web/weckey-web-hero.jpg);
+  background-image: url(/images/weckey-web/weckey-web-hero-bg.jpg);
 }
 #weckey-web .overlay {
   background: rgba(50, 67, 78, 0.7);
@@ -13418,7 +13418,7 @@ section .overlay {
   }
 }
 #weckey-app #hero {
-  background-image: url(/images/weckey-app/weckey-app-hero.jpg);
+  background-image: url(/images/weckey-app/weckey-app-hero-bg.jpg);
 }
 #weckey-app .overlay {
   background: -moz-linear-gradient(top, rgba(237, 86, 35, 0.7) 0%, #ed5623 70%, #ed5623 100%);
