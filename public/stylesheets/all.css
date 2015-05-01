@@ -13471,6 +13471,24 @@ section .overlay {
     background-position: 50% 0;
   }
 }
+#weckey-app #cards {
+  height: 70vh;
+  background-image: url(/images/weckey-app/weckey-admin-cards.jpg);
+  background-position: 25% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #weckey-app #cards {
+    height: 80vh;
+    background-position: 20% 65%;
+  }
+}
+@media (min-width: 992px) {
+  #weckey-app #cards {
+    background-attachment: fixed;
+  }
+}
 .shadow-lt {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
